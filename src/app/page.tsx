@@ -28,7 +28,7 @@ export default function LandingPage() {
     >
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingOverlay
-          brandName="WebDesign Co"
+          brandName="Moes Webpages"
           navItems={[
             { name: "Services", id: "services" },
             { name: "Portfolio", id: "portfolio" },
@@ -122,7 +122,7 @@ export default function LandingPage() {
           testimonials={[
             {
               id: "t1",              name: "Sarah Johnson",              handle: "Founder & CEO",              rating: 5,
-              testimonial: "WebDesign Co transformed our online store. Our sales increased by 150% within three months. Highly recommend!",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B2WBbWaQPKGBUH3yQyyxilG5F9/a-professional-headshot-photo-of-a-happy-1773871434925-3490577d.png",              imageAlt: "Sarah Johnson headshot"
+              testimonial: "Moes Webpages transformed our online store. Our sales increased by 150% within three months. Highly recommend!",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B2WBbWaQPKGBUH3yQyyxilG5F9/a-professional-headshot-photo-of-a-happy-1773871434925-3490577d.png",              imageAlt: "Sarah Johnson headshot"
             },
             {
               id: "t2",              name: "Michael Chen",              handle: "Product Manager",              rating: 5,
@@ -160,21 +160,21 @@ export default function LandingPage() {
           animationType="scale-rotate"
           plans={[
             {
-              id: "starter",              badge: "Great Start",              badgeIcon: Sparkles,
-              price: "$2,999",              subtitle: "Perfect for small businesses",              features: [
-                "5-page responsive website",                "Mobile optimized design",                "Basic SEO optimization",                "Contact form integration",                "Free domain for 1 year"
+              id: "basic",              badge: "Great Start",              badgeIcon: Sparkles,
+              price: "$500",              subtitle: "Perfect for small businesses",              features: [
+                "Basic webpage setup",                "Mobile responsive design",                "Basic SEO optimization",                "Contact form integration",                "Free domain setup"
               ]
             },
             {
-              id: "professional",              badge: "Most Popular",              badgeIcon: Star,
-              price: "$5,999",              subtitle: "Ideal for growing companies",              features: [
-                "10-page custom website",                "E-commerce integration",                "Advanced SEO package",                "Analytics dashboard",                "6 months free support",                "Monthly maintenance"
+              id: "addons",              badge: "Add-Ons Available",              badgeIcon: Star,
+              price: "$250",              subtitle: "Enhance your package",              features: [
+                "Additional pages",                "Advanced features",                "Custom integrations",                "E-commerce setup",                "Performance optimization"
               ]
             },
             {
-              id: "enterprise",              badge: "Premium Solution",              badgeIcon: Award,
-              price: "$12,999",              subtitle: "Full-featured for enterprises",              features: [
-                "Unlimited pages",                "Custom features & API",                "Enterprise SEO strategy",                "CRM integration",                "12 months free support",                "Priority updates"
+              id: "full",              badge: "Best Value",              badgeIcon: Award,
+              price: "$1,500 + $20/mo",              subtitle: "Complete web solution",              features: [
+                "Full package website",                "Unlimited pages",                "Custom features & API",                "Enterprise SEO strategy",                "12 months support",                "Monthly maintenance & updates"
               ]
             }
           ]}
@@ -230,8 +230,8 @@ export default function LandingPage() {
 
       <div id="footer" data-section="footer">
         <FooterBase
-          logoText="WebDesign Co"
-          copyrightText="© 2025 WebDesign Co. All rights reserved."
+          logoText="Moes Webpages"
+          copyrightText="© 2025 Moes Webpages. All rights reserved."
           columns={[
             {
               title: "Services",              items: [
