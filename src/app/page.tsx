@@ -161,7 +161,7 @@ export default function LandingPage() {
           plans={[
             {
               id: "basic",              badge: "Great Start",              badgeIcon: Sparkles,
-              price: "$500",              subtitle: "Perfect for small businesses",              features: [
+              price: "$600",              subtitle: "Perfect for small businesses",              features: [
                 "Basic webpage setup",                "Mobile responsive design",                "Basic SEO optimization",                "Contact form integration",                "Free domain setup"
               ]
             },
