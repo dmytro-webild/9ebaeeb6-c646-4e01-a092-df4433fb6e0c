@@ -211,7 +211,7 @@ export default function LandingPage() {
               id: "q1",              title: "How long does a website project take?",              content: "Most projects take 4-8 weeks depending on complexity. We provide a detailed timeline during the initial consultation."
             },
             {
-              id: "q2",              title: "Do you provide ongoing maintenance?",              content: "Yes! All our packages include ongoing support and maintenance to keep your website secure and up-to-date."
+              id: "q2",              title: "Do you provide ongoing maintenance?",              content: "Yes! For an additional fee of $20/month!"
             },
             {
               id: "q3",              title: "Can you redesign my existing website?",              content: "Absolutely. We specialize in modernizing outdated websites while preserving SEO rankings and important functionality."
