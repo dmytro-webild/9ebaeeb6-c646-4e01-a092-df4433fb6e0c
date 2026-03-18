@@ -208,7 +208,7 @@ export default function LandingPage() {
           sideDescription="Everything you need to know about our web design services and process."
           faqs={[
             {
-              id: "q1",              title: "How long does a website project take?",              content: "Most projects take 4-8 weeks depending on complexity. We provide a detailed timeline during the initial consultation."
+              id: "q1",              title: "How long does a website project take?",              content: "Most projects take 1-2 days depending on changes made after the initial site is made. "
             },
             {
               id: "q2",              title: "Do you provide ongoing maintenance?",              content: "Yes! For an additional fee of $20/month!"
