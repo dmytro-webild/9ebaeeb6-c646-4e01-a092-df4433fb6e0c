@@ -88,7 +88,7 @@ export default function LandingPage() {
           description="Explore our latest web design work showcasing diverse industries and innovative solutions."
           tag="Portfolio Showcase"
           tagIcon={Star}
-          tagAnimation="entrance-slide"
+          tagAnimation="slide-up"
           textboxLayout="default"
           useInvertedBackground={false}
           gridVariant="three-columns-all-equal-width"
@@ -114,7 +114,7 @@ export default function LandingPage() {
           description="Real feedback from businesses we've helped transform their online presence."
           tag="Client Success Stories"
           tagIcon={Award}
-          tagAnimation="entrance-slide"
+          tagAnimation="blur-reveal"
           textboxLayout="default"
           useInvertedBackground={true}
           showRating={true}
@@ -154,7 +154,7 @@ export default function LandingPage() {
           description="Choose the perfect package for your business needs. All plans include ongoing support and updates."
           tag="Investment Options"
           tagIcon={Zap}
-          tagAnimation="entrance-slide"
+          tagAnimation="blur-reveal"
           textboxLayout="default"
           useInvertedBackground={false}
           animationType="scale-rotate"
