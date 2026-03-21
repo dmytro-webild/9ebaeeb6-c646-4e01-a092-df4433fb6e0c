@@ -47,7 +47,7 @@ export default function LandingPage() {
           tagIcon={Sparkles}
           tagAnimation="slide-up"
           buttons={[
-            { text: "Start Your Project", href: "#pricing" },
+            { text: "Get Your Free Website Audit", href: "#pricing" },
             { text: "Get a Free Quote", href: "#contact" },
             { text: "View Portfolio", href: "#portfolio" }
           ]}
