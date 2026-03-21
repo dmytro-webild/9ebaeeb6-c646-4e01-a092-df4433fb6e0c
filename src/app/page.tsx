@@ -11,8 +11,19 @@ import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import FaqSplitText from '@/components/sections/faq/FaqSplitText';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import { Award, CheckCircle, Sparkles, Star, Zap, Shield } from 'lucide-react';
+import { useState } from 'react';
 
 export default function LandingPage() {
+  const [showContactPopup, setShowContactPopup] = useState(false);
+
+  const handleAuditClick = () => {
+    setShowContactPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowContactPopup(false);
+  };
+
   return (
     <ThemeProvider
       defaultButtonVariant="text-shift"
@@ -47,8 +58,7 @@ export default function LandingPage() {
           tagIcon={Sparkles}
           tagAnimation="slide-up"
           buttons={[
-            { text: "Get Your Free Website Audit", href: "#pricing" },
-            { text: "Get a Free Quote", href: "#contact" },
+            { text: "Get Your Free Website Audit", onClick: handleAuditClick },
             { text: "View Portfolio", href: "#portfolio" }
           ]}
           buttonAnimation="slide-up"
@@ -261,6 +271,50 @@ export default function LandingPage() {
           ]}
         />
       </div>
+
+      {showContactPopup && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+          <div className="relative w-full max-w-sm rounded-lg bg-white p-8 shadow-lg">
+            <button
+              onClick={handleClosePopup}
+              className="absolute right-4 top-4 text-gray-500 hover:text-gray-700"
+              aria-label="Close popup"
+            >
+              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <h2 className="mb-6 text-2xl font-bold text-gray-900">Get Your Free Website Audit</h2>
+            <div className="space-y-4">
+              <div>
+                <p className="text-lg font-semibold text-gray-700">Contact Information:</p>
+              </div>
+              <div className="rounded-lg bg-gray-100 p-4">
+                <p className="mb-2 text-gray-700">
+                  <span className="font-semibold">Phone:</span>
+                </p>
+                <p className="text-lg text-blue-600 hover:underline">
+                  <a href="tel:202-499-0142">202-499-0142</a>
+                </p>
+              </div>
+              <div className="rounded-lg bg-gray-100 p-4">
+                <p className="mb-2 text-gray-700">
+                  <span className="font-semibold">Email:</span>
+                </p>
+                <p className="text-lg text-blue-600 hover:underline">
+                  <a href="mailto:moeswebpages@gmail.com">moeswebpages@gmail.com</a>
+                </p>
+              </div>
+            </div>
+            <button
+              onClick={handleClosePopup}
+              className="mt-6 w-full rounded-lg bg-blue-600 px-4 py-2 font-semibold text-white hover:bg-blue-700"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </ThemeProvider>
   );
 }
