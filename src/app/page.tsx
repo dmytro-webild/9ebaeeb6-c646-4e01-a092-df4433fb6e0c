@@ -48,6 +48,7 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           buttons={[
             { text: "Start Your Project", href: "#pricing" },
+            { text: "Get a Free Quote", href: "#contact" },
             { text: "View Portfolio", href: "#portfolio" }
           ]}
           buttonAnimation="slide-up"
